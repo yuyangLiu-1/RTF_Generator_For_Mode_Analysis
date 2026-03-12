@@ -12,12 +12,3 @@ Notes:
 3. It can't customize the boundary condition, which means it can't be used for the problems with priors of the boundary impedances.
 4. For similar as the reality, a third-order high-pass ButterWorth filter is used, the cut-off frequency is 15Hz.
 ---------------------------------------------------------
-
-Input parameters:
-Lx, Ly, Lz are the shoebox parameters: length, width, height
-x: the observation point
-x0: the source position
-alpha: 1/(2*Q), 
-where Q is the Q factor; The larger alpha, the stronger the damping effect.
-Suggested alpha range: <1e-4.
-Q factor: wn/(2*sigman), where the n-th resonant angle is w_n+jsigma_n. 
