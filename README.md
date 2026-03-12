@@ -17,6 +17,7 @@ Input parameters:
 Lx, Ly, Lz are the shoebox parameters: length, width, height
 x: the observation point
 x0: the source position
-alpha: 1/(2*Q), where Q is the Q factor; The larger alpha, the stronger the damping effect.
+alpha: 1/(2*Q), 
+where Q is the Q factor; The larger alpha, the stronger the damping effect.
 Suggested alpha range: <1e-4.
 Q factor: wn/(2*sigman), where the n-th resonant angle is w_n+jsigma_n. 
