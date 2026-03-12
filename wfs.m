@@ -26,14 +26,13 @@
 % Suggested alpha range: <1e-4.
 % Q factor: wn/(2*sigman), where the n-th resonant angle is w_n+jsigma_n. 
 
-function G = wfs(Lx,Ly,Lz,x,x0,alpha,f)
+function [g,G] = wfs(Lx,Ly,Lz,x,x0,alpha,f)
 seed = 3;
 rng(seed);
 c = 343;
 omega = 2*pi*f;
 k = omega/c;
-
-Nx=10; Ny=10; Nz=10;
+Nx=15; Ny=15; Nz=15;
 
 [nx,ny,nz] = ndgrid(0:Nx,0:Ny,0:Nz);
 
@@ -89,6 +88,8 @@ Wn = fc/(fs/2);
 H_mag = freqz(b,a,f,fs);         % evaluate at your frequency axis        
 
 G = H_mag' .* G;
+
+g = real(ifft(G));
 
 end
 
