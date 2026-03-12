@@ -1,4 +1,4 @@
-# RTF_Generator_For_Mode_Analysis
+# RTF_Simulator_For_Mode_Analysis
 This is the matlab file to generate the RTF specially for mode analysis
 
 This file is a simulator for generating a 3D non-rigid shoe-box wave field, where the damping effects and the mode shifts are randomized.
